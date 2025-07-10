@@ -1,3 +1,9 @@
 GET http://localhost:3333/users
 ### Ctrl+Alt+R
 POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "Diego Fernandes",
+  "email": "diego@rocketseat.com.br"
+}

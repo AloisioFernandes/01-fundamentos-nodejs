@@ -20,11 +20,11 @@ const server = http.createServer(async(req,res) => {
     buffers.push(chunk); 
   }
 
-  const fullStramContent = Buffer.concat(buffers).toString();
+  const fullStreamContent = Buffer.concat(buffers).toString();
 
-  console.log(`Full stream content: ${fullStramContent}`);
+  console.log(`Full stream content: ${fullStreamContent}`);
 
-  return res.end(fullStramContent); // Send the full content back as response
+  return res.end(fullStreamContent); // Send the full content back as response
   
   return req
     .pipe(new InverseNumberStream()) // Transform the stream to inverse the numbers
