@@ -28,4 +28,11 @@ export const routes = [
       return res.writeHead(201).end();
     },
   },
+  {
+    method: "DELETE",
+    path: "/users/:id",
+    handler: async (req, res) => {
+      return read.end();
+    },
+  },
 ];
