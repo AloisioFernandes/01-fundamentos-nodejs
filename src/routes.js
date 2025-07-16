@@ -1,5 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { buildRoutePath } from "./utils/build-route-path";
+import { buildRoutePath } from "./utils/build-route-path.js";
+import { Database } from "./database.js";
+
 const database = new Database();
 
 export const routes = [
@@ -33,7 +35,7 @@ export const routes = [
     method: "DELETE",
     path: buildRoutePath("/users/:id"),
     handler: async (req, res) => {
-      return read.end();
+      return res.end();
     },
   },
 ];

@@ -7,3 +7,5 @@ Content-Type: application/json
   "name": "Diego Fernandes",
   "email": "diego@rocketseat.com.br"
 }
+###
+DELETE http://localhost:3333/users/1
