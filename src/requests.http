@@ -8,4 +8,4 @@ Content-Type: application/json
   "email": "diego@rocketseat.com.br"
 }
 ###
-DELETE http://localhost:3333/users/1
+DELETE http://localhost:3333/users/7e707be9-ab64-45d8-b7f9-f5f1e087c097
